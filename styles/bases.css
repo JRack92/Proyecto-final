@@ -121,6 +121,9 @@ footer {
 .card {
   background-color: #212121;
   width: 15rem;
+}
+
+.card__Animation {
   animation: fadeIn;
   animation-duration: 1.5s;
 }
