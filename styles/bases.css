@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Outfit:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+p,
+label,
+input,
+textarea {
+  font-family: "Hanken Grotesk", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Hanken Grotesk", sans-serif !important;
+  text-transform: uppercase !important;
+}
+
+img {
+  width: 100%;
+}
+
+.nav_main {
+  background-color: #212121 !important ;
+}
+
+.nav_main .offcanvas {
+  background-color: #212121 !important ;
+}
+
+.nav_main_logo {
+  width: 3rem;
+  height: auto;
+}
+
+.nav_main_menu {
+  display: flex;
+  margin-right: 30px;
+}
+
+.nav_main_menu li {
+  padding: 10px;
+}
+
+.nav_main_menu li a {
+  padding: 3px;
+}
+
+.nav_main_menu li a:hover {
+  border-bottom: 2px solid white;
+}
+
+footer {
+  background-color: #212121;
+  height: 50px;
+}
+
+.slider {
+  width: 100%;
+  height: 692px;
+  background: url("../assets/img/header.jpg") no-repeat calc(100% + 25rem)
+    center/cover;
+  color: white;
+
+  padding-top: 36.5rem;
+}
+
+.slider__Emblema {
+  display: none;
+}
+
+.slider__img {
+  width: 256px;
+  height: auto;
+}
+
+.slider__title,
+.slider__text {
+  font-size: 16px;
+}
+
+/* header */
+.quienesSomos {
+  background-color: #212121;
+}
+
+.quienesSomos__title {
+  font-weight: bold;
+}
+
+.card {
+  background-color: #212121;
+  width: 15rem;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__contend_date {
+  margin-top: 0px;
+}
+
+.card__contend_button {
+  background-color: #da291c;
+  font-weight: bold;
+  width: 128px;
+}
+
+.meetingPoint {
+  margin-top: 5rem;
+}
+
+.meetingPoint__mediaContainer_gallery_img {
+  width: 19rem;
+  height: 19rem;
+}
+
+.meetingPoint__mediaContainer_maps {
+  width: 19rem;
+  height: 19rem;
+}
+
+@media (min-width: 576px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 25rem)
+      center/cover;
+  }
+
+  .meetingPoint__mediaContainer_maps {
+    width: 38.5rem;
+    height: 19rem;
+  }
+}
+
+@media (min-width: 680px) {
+}
+
+@media (min-width: 768px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 32rem)
+      center/cover;
+  }
+
+  .meetingPoint__mediaContainer_maps {
+    width: 38.5rem;
+    height: 19rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .meetingPoint__mediaContainer_maps {
+    width: 61rem;
+    height: 19rem;
+  }
+
+  .meetingPoint__mediaContainer_gallery_img {
+    width: 14.9rem;
+    height: 14.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 19rem)
+      center/cover;
+  }
+
+  .card {
+    width: 14rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 9rem)
+      center/cover;
+  }
+
+  .card {
+    width: 17rem;
+  }
+
+  .meetingPoint__mediaContainer_maps {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .meetingPoint__mediaContainer_gallery_img {
+    width: 18rem;
+    height: 17.2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1440px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 9rem)
+      center/cover;
+  }
+
+  .meetingPoint__mediaContainer_gallery_img {
+    width: 17rem;
+    height: 17.2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat center center/cover;
+  }
+
+  .meetingPoint__mediaContainer_maps {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .meetingPoint__mediaContainer_gallery_img {
+    width: 20rem;
+    height: 17.2rem;
+  }
+}

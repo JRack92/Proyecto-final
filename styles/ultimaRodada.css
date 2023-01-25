@@ -1,0 +1,23 @@
+.lastMeeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.lastMeeting__title {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.lastMeeting__info {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.lastMeeting__info a {
+  color: black;
+  text-transform: none;
+}
