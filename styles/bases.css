@@ -95,6 +95,8 @@ footer {
 
 .slider__Emblema {
   display: none;
+  animation: backInLeft;
+  animation-duration: 1.5s;
 }
 
 .slider__img {
@@ -119,6 +121,8 @@ footer {
 .card {
   background-color: #212121;
   width: 15rem;
+  animation: fadeIn;
+  animation-duration: 1.5s;
 }
 
 .card__img {
@@ -142,6 +146,8 @@ footer {
 .meetingPoint__mediaContainer_gallery_img {
   width: 19rem;
   height: 19rem;
+  animation: fadeIn;
+  animation-duration: 1.5s;
 }
 
 .meetingPoint__mediaContainer_maps {
