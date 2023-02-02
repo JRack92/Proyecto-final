@@ -50,6 +50,7 @@
   width: 128px;
 }
 
+
 @media (min-width: 680px) {
   .slider {
     background: url("../assets/img/header.jpg") no-repeat calc(100% + 25rem)
