@@ -158,7 +158,7 @@ footer {
   height: 19rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 336px) {
   .footer__text {
   font-size: 0.9rem !important;
   }
