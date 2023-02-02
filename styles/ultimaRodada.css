@@ -1,23 +1,49 @@
 .lastMeeting {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin-top: 30px;
+  width: 90%;
+  margin-top: 5rem;
 }
 
-.lastMeeting__title {
-  margin-bottom: 20px;
-  font-size: 48px;
+.videoPlayer{
+  width: 23rem;
+  height: 14rem;
 }
 
 .lastMeeting__info {
-  margin-bottom: 20px;
-  width: 70%;
 }
 
 .lastMeeting__info a {
   color: black;
   text-transform: none;
+}
+
+@media (min-width: 668px) {
+  .videoPlayer{
+    width: 32rem;
+    height: 19rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .videoPlayer{
+    width: 41rem;
+    height: 22rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lastMeeting {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lastMeeting {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .lastMeeting {
+    width: 50%;
+  }
 }

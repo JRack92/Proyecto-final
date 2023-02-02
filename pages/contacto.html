@@ -10,10 +10,13 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles/bases.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/contacto.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link
       rel="shortcut icon"
@@ -90,10 +93,10 @@
       </nav>
     </header>
 
-    <section class="contactUs">
-      <h2 class="contactUs__title">Contáctanos</h2>
+    <section class="container contactUs pt-3 rounded-4">
+      <h2 class=" text-center h1 mb-3">Contáctanos</h2>
 
-      <p class="contactUs__info">
+      <p class=" mb-4 fs-6 text-center">
         Estas interesado de ser parte de la familia
         <strong><em>Royal Adventure Bucaramanga</em></strong
         >? no tengas miedo y puedes escribirnos y nos podremos en contacto
@@ -101,77 +104,98 @@
         nuestras <strong><i>ROAD Rodadas</i></strong>
       </p>
 
-      <form class="contactUs__form">
-        <div class="contactUs__form__item">
-          <label class="contactUs__form__item--label" for="nombre-apellido"
-            >Nombre y Apellidos</label
-          >
-          <input
-            class="contactUs__form__item--input"
-            type="text"
-            name=""
-            id="nombre-apellido"
-            placeholder="nombre y apellido"
-            required
-          />
+      <form class="container-fluid">
+        <div class="container-fluid mb-2 contactUs__form__item">
+          <div class="row justify-content-center">
+            <label
+              class="col-12 col-md-6 fs-5 text-center text-md-end contactUs__form__item--label"
+              for="nombre-apellido"
+              >Nombre y Apellidos</label
+            >
+            <input
+              class="col-12 col-md-6 fs-6 contactUs__form__item--input"
+              type="text"
+              name=""
+              id="nombre-apellido"
+              placeholder="Nombre y Apellidos"
+              required
+            />
+          </div>
         </div>
 
-        <div class="contactUs__form__item">
-          <label class="contactUs__form__item--label" for="telefono"
-            >Teléfono</label
-          >
-          <input
-            class="contactUs__form__item--input"
-            type="tel"
-            name=""
-            id="telefono"
-            placeholder="teléfono"
-            required
-          />
+        <div class="container-fluid mb-2">
+          <div class="row justify-content-center">
+            <label
+              class="col-12 col-md-6 fs-5 text-center text-md-end contactUs__form__item--label"
+              for="telefono"
+              >Teléfono</label
+            >
+            <input
+              class="col-12 col-md-6 fs-6 contactUs__form__item--input"
+              type="tel"
+              name=""
+              id="telefono"
+              placeholder="Teléfono"
+              required
+            />
+          </div>
         </div>
 
-        <div class="contactUs__form__item">
-          <label class="contactUs__form__item--label" for="correo"
-            >Correo electrónico</label
-          >
-          <input
-            class="contactUs__form__item--input"
-            type="email"
-            name=""
-            id="correo"
-            placeholder="correo electrónico"
-          />
+        <div class="container-fluid mb-2">
+          <div class="row justify-content-center">
+            <label
+              class="col-12 col-md-6 fs-5 text-center text-md-end contactUs__form__item--label"
+              for="correo"
+              >Correo electrónico</label
+            >
+            <input
+              class="col-12 col-md-6 fs-6 contactUs__form__item--input"
+              type="email"
+              name=""
+              id="correo"
+              placeholder="Correo electrónico"
+              required
+            />
+          </div>
         </div>
 
-        <div class="contactUs__form__item">
-          <label class="contactUs__form__item--label" for="mansaje"
-            >Déjanos tu mensaje</label
-          >
-          <textarea
-            class="contactUs__form__item--textArea"
-            name=""
-            id="mensaje"
-            cols="22"
-            rows="5"
-          ></textarea>
+        <div class="container-fluid mb-2 contactUs__form__item">
+          <div class="row justify-content-center">
+            <label
+              class="col-12 col-md-6 fs-5 text-center text-md-end contactUs__form__item--label"
+              for="mansaje"
+              >Déjanos tu mensaje</label
+            >
+            <textarea
+              class="col-12 col-md-6 fs-6 contactUs__form__item--textArea"
+              name=""
+              id="mensaje"
+              cols="22"
+              rows="5"
+            ></textarea>
+          </div>
         </div>
 
-        <div class="contactUs__form__containerButtons">
-          <input
-            class="contactUs__form__containerButtons--input"
-            type="submit"
-            value="Enviar formulario"
-          />
-          <input
-            class="contactUs__form__containerButtons--input"
-            type="reset"
-            value="Limpiar formulario"
-          />
+        <div class="container mt-3 pb-3 text-center">
+          <div class="row gap-3 justify-content-center">
+            <input
+              class="col-12 col-sm-6 fs-6 rounded-2 p-2 contactUs__form__containerButtons--input"
+              type="submit"
+              value="Enviar formulario"
+            />
+            <input
+              class="col-12 col-sm-6 fs-6 rounded-2 p-2 contactUs__form__containerButtons--input"
+              type="reset"
+              value="Limpiar formulario"
+            />
+          </div>
         </div>
       </form>
     </section>
 
-    <footer class="d-flex flex-column text-white text-center justify-content-center position-absolute w-100 bottom-0 p-3" >
+    <footer
+      class="d-flex flex-column text-white text-center justify-content-center position-absolute w-100 bottom-0 p-3"
+    >
       <p class="fs-6 mb-0">
         Todos los derechos reservados para Royal Adventure Bucaramanga [ROAD] -
         2022®
