@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Outfit:wght@800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -49,11 +48,10 @@ img {
 }
 
 .nav_main {
-  background-color: #212121 !important ;
+  background-color: #212121 !important;
 }
-
 .nav_main .offcanvas {
-  background-color: #212121 !important ;
+  background-color: #212121 !important;
 }
 
 .nav_main_logo {
@@ -61,60 +59,38 @@ img {
   height: auto;
 }
 
-.nav_main_menu {
-  display: flex;
-  margin-right: 30px;
-}
-
-.nav_main_menu li {
-  padding: 10px;
-}
-
-.nav_main_menu li a {
-  padding: 3px;
-}
-
-.nav_main_menu li a:hover {
-  border-bottom: 2px solid white;
-}
-
 footer {
   background-color: #212121;
   height: 50px;
 }
 
+@media (max-width: 336px) {
+  .footer__text {
+    font-size: 0.9rem !important;
+  }
+}
 .slider {
   width: 100%;
   height: 692px;
-  background: url("../assets/img/header.jpg") no-repeat calc(100% + 25rem)
-    center/cover;
+  background: url("../assets/img/header.jpg") no-repeat calc(100% + 25rem) center/cover;
   color: white;
-
   padding-top: 36.5rem;
 }
-
-.slider__Emblema {
+.slider .slider__Emblema {
   display: none;
   animation: backInLeft;
   animation-duration: 1.5s;
 }
-
-.slider__img {
+.slider .slider__Emblema div .slider__img {
   width: 256px;
   height: auto;
-}
-
-.slider__title,
-.slider__text {
-  font-size: 16px;
 }
 
 /* header */
 .quienesSomos {
   background-color: #212121;
 }
-
-.quienesSomos__title {
+.quienesSomos div .quienesSomos__title {
   font-weight: bold;
 }
 
@@ -122,26 +98,57 @@ footer {
   background-color: #212121;
   width: 15rem;
 }
+.card .card__img {
+  width: 100%;
+}
 
 .card__Animation {
   animation: fadeIn;
   animation-duration: 1.5s;
 }
 
-.card__img {
-  width: 100%;
-}
-
-.card__contend_date {
-  margin-top: 0px;
-}
-
-.card__contend_button {
+.card__button {
   background-color: #da291c;
   font-weight: bold;
   width: 128px;
 }
 
+@media (min-width: 576px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 25rem) center/cover;
+  }
+}
+@media (min-width: 768px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 32rem) center/cover;
+  }
+}
+@media (min-width: 1024px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 19rem) center/cover;
+  }
+  .card {
+    width: 14rem;
+  }
+}
+@media (min-width: 1200px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 9rem) center/cover;
+  }
+  .card {
+    width: 17rem;
+  }
+}
+@media (min-width: 1440px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat calc(100% + 9rem) center/cover;
+  }
+}
+@media (min-width: 1920px) {
+  .slider {
+    background: url("../assets/img/header.jpg") no-repeat center center/cover;
+  }
+}
 .meetingPoint {
   margin-top: 5rem;
 }
@@ -158,111 +165,167 @@ footer {
   height: 19rem;
 }
 
-@media (max-width: 336px) {
-  .footer__text {
-  font-size: 0.9rem !important;
-  }
-}
-
-
 @media (min-width: 576px) {
-  .slider {
-    background: url("../assets/img/header.jpg") no-repeat calc(100% + 25rem)
-      center/cover;
-  }
-
   .meetingPoint__mediaContainer_maps {
     width: 38.5rem;
     height: 19rem;
   }
 }
-
-@media (min-width: 680px) {
-}
-
 @media (min-width: 768px) {
-  .slider {
-    background: url("../assets/img/header.jpg") no-repeat calc(100% + 32rem)
-      center/cover;
-  }
-
   .meetingPoint__mediaContainer_maps {
     width: 38.5rem;
     height: 19rem;
   }
 }
-
 @media (min-width: 992px) {
   .meetingPoint__mediaContainer_maps {
     width: 61rem;
     height: 19rem;
   }
-
   .meetingPoint__mediaContainer_gallery_img {
     width: 14.9rem;
     height: 14.9rem;
   }
 }
-
-@media (min-width: 1024px) {
-  .slider {
-    background: url("../assets/img/header.jpg") no-repeat calc(100% + 19rem)
-      center/cover;
-  }
-
-  .card {
-    width: 14rem;
-  }
-}
-
 @media (min-width: 1200px) {
-  .slider {
-    background: url("../assets/img/header.jpg") no-repeat calc(100% + 9rem)
-      center/cover;
-  }
-
-  .card {
-    width: 17rem;
-  }
-
   .meetingPoint__mediaContainer_maps {
     width: 35rem;
     height: 35rem;
   }
-
   .meetingPoint__mediaContainer_gallery_img {
     width: 18rem;
     height: 17.2rem;
   }
 }
-
-@media (min-width: 1280px) {
-}
-
 @media (min-width: 1440px) {
-  .slider {
-    background: url("../assets/img/header.jpg") no-repeat calc(100% + 9rem)
-      center/cover;
-  }
-
   .meetingPoint__mediaContainer_gallery_img {
     width: 17rem;
     height: 17.2rem;
   }
 }
-
 @media (min-width: 1920px) {
-  .slider {
-    background: url("../assets/img/header.jpg") no-repeat center center/cover;
-  }
-
   .meetingPoint__mediaContainer_maps {
     width: 35rem;
     height: 35rem;
   }
-
   .meetingPoint__mediaContainer_gallery_img {
     width: 20rem;
     height: 17.2rem;
   }
 }
+.contactUs {
+  width: 90%;
+  margin-top: 5rem;
+  background-color: #e5e3e3;
+}
+
+.contactUs__form__containerButtons--input {
+  width: 10rem;
+}
+
+@media (min-width: 768px) {
+  .contactUs__form__item--input,
+  .contactUs__form__item--textArea {
+    width: 60% !important;
+  }
+  .contactUs__form__item--label {
+    width: 40% !important;
+  }
+}
+@media (min-width: 1024px) {
+  .contactUs {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .contactUs {
+    width: 60%;
+  }
+}
+@media (min-width: 1440px) {
+  .contactUs {
+    width: 50%;
+  }
+}
+.lastMeeting {
+  width: 90%;
+  margin-top: 5rem;
+}
+
+.videoPlayer {
+  width: 23rem;
+  height: 14rem;
+}
+
+.lastMeeting__info a {
+  color: black;
+  text-transform: none;
+}
+
+@media (min-width: 668px) {
+  .videoPlayer {
+    width: 32rem;
+    height: 19rem;
+  }
+}
+@media (min-width: 768px) {
+  .videoPlayer {
+    width: 41rem;
+    height: 22rem;
+  }
+}
+@media (min-width: 1024px) {
+  .lastMeeting {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .lastMeeting {
+    width: 60%;
+  }
+}
+@media (min-width: 1400px) {
+  .lastMeeting {
+    width: 50%;
+  }
+}
+.sponsors {
+  width: 96%;
+  margin-top: 4.5rem;
+}
+
+.card {
+  background-color: #212121;
+  color: white;
+  width: 18.8rem;
+  height: 18.8rem;
+}
+.card .card__img {
+  width: auto;
+  height: 150px;
+  overflow: hidden;
+  text-align: center;
+}
+.card .card__img img {
+  width: auto;
+  height: 150px;
+}
+.card .card__contend {
+  height: 128px;
+}
+.card .card__contend div .card__contend_button {
+  background-color: #da291c;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  width: 128px;
+}
+
+@media (min-width: 1200px) {
+  .sponsors {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

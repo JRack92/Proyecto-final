@@ -5,8 +5,9 @@
 .meetingPoint__mediaContainer_gallery_img {
   width: 19rem;
   height: 19rem;
+  animation: fadeIn;
+  animation-duration: 1.5s;
 }
-
 
 .meetingPoint__mediaContainer_maps {
   width: 19rem;
@@ -14,6 +15,13 @@
 }
 
 @media (min-width: 576px) {
+  .meetingPoint__mediaContainer_maps {
+    width: 38.5rem;
+    height: 19rem;
+  }
+}
+
+@media (min-width: 768px) {
   .meetingPoint__mediaContainer_maps {
     width: 38.5rem;
     height: 19rem;
@@ -40,6 +48,25 @@
 
   .meetingPoint__mediaContainer_gallery_img {
     width: 18rem;
+    height: 17.2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .meetingPoint__mediaContainer_gallery_img {
+    width: 17rem;
+    height: 17.2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .meetingPoint__mediaContainer_maps {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .meetingPoint__mediaContainer_gallery_img {
+    width: 20rem;
     height: 17.2rem;
   }
 }

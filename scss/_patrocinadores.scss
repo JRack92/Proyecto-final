@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+.sponsors {
+  width: 96%;
+  margin-top: 4.5rem;
+}
+
+.card {
+  background-color: $color-principal;
+  color: white;
+  width: 18.8rem;
+  height: 18.8rem;
+
+  .card__img {
+    width: auto;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+
+    img {
+      width: auto;
+      height: 150px;
+    }
+  }
+
+  .card__contend {
+    height: 128px;
+
+    div {
+      .card__contend_button {
+        background-color: $color-secundario;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold;
+        text-align: center;
+        width: 128px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .sponsors {
+    width: 80%;
+  }
+}

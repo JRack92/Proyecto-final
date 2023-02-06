@@ -1,0 +1,72 @@
+@use "variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+p,
+label,
+input,
+textarea {
+  font-family: $font-secundaria;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-principal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: $font-secundaria;
+  text-transform: uppercase !important;
+}
+
+img {
+  width: 100%;
+}
+
+.nav_main {
+  background-color: $color-principal !important ;
+  .offcanvas {
+    background-color: $color-principal !important ;
+  }
+}
+
+.nav_main_logo {
+  width: 3rem;
+  height: auto;
+}
+
+footer {
+  background-color: $color-principal;
+  height: 50px;
+}
+
+@media (max-width: 336px) {
+  .footer__text {
+    font-size: 0.9rem !important;
+  }
+}
