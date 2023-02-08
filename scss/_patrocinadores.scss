@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 .sponsors {
   width: 96%;
@@ -28,12 +29,12 @@
 
     div {
       .card__contend_button {
-        background-color: $color-secundario;
-        text-transform: uppercase;
-        display: inline-block;
-        font-weight: bold;
+        @include button(
+          $bgColor: $color-secundario,
+          $fontWeight: bold,
+          $margin: 0.5rem
+        );
         text-align: center;
-        width: 128px;
       }
     }
   }

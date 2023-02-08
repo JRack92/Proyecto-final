@@ -111,6 +111,15 @@ footer {
   background-color: #da291c;
   font-weight: bold;
   width: 128px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  color: white;
+}
+.card__button:hover {
+  -webkit-animation: pulse infinite 1s;
+  animation: pulse infinite 1s;
+  background-color: #123445;
 }
 
 @media (min-width: 576px) {
@@ -220,7 +229,18 @@ footer {
 }
 
 .contactUs__form__containerButtons--input {
+  background-color: #212121;
+  font-weight: bold;
   width: 10rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0rem;
+  color: white;
+}
+.contactUs__form__containerButtons--input:hover {
+  -webkit-animation: pulse infinite 1s;
+  animation: pulse infinite 1s;
+  background-color: #123445;
 }
 
 @media (min-width: 768px) {
@@ -315,11 +335,18 @@ footer {
 }
 .card .card__contend div .card__contend_button {
   background-color: #da291c;
-  text-transform: uppercase;
-  display: inline-block;
   font-weight: bold;
-  text-align: center;
   width: 128px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: white;
+  text-align: center;
+}
+.card .card__contend div .card__contend_button:hover {
+  -webkit-animation: pulse infinite 1s;
+  animation: pulse infinite 1s;
+  background-color: #123445;
 }
 
 @media (min-width: 1200px) {

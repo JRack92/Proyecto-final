@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 .slider {
   width: 100%;
@@ -47,9 +48,12 @@
 }
 
 .card__button {
-  background-color: $color-secundario;
-  font-weight: bold;
-  width: 128px;
+  @include button(
+    $bgColor: $color-secundario,
+    $fontWeight: bold,
+  );
+
+ 
 }
 
 @media (min-width: 576px) {
