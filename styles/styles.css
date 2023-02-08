@@ -326,7 +326,7 @@ footer {
   overflow: hidden;
   text-align: center;
 }
-.card .card__img img {
+.card .card__img picture img {
   width: auto;
   height: 150px;
 }
