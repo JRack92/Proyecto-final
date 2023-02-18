@@ -4,7 +4,10 @@ let jsonData = "";
 const cardContainer = document.getElementById("Cards__Container");
 
 (async () => {
-  const response = await fetch('../Data/ListaRodadas.json');
+  // Carga de Json Online
+  const response = await fetch('./Data/ListaRodadas.json');
+  // Archivo Local
+  // const response = await fetch('../Data/ListaRodadas.json');
   const data = await response.json();
   jsonData = data;
   LoadCards();
