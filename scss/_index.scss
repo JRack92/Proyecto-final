@@ -52,7 +52,7 @@
 }
 
 .card__button {
-  @include button($bgColor: $color-secundario, $fontWeight: bold);
+  @include button($bgColor: $color-secundario, $fontWeight: bold, $fontSize: 0.9rem);
 }
 
 @media (min-width: 576px) {
